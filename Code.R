@@ -1,7 +1,7 @@
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
-data <- read.csv("~/Documents/Jacqueline/duke/Fall Term/Data Science for Business/Final Project -- Fraud/fraudTest.csv")
+data <- read.csv("~/Documents/Vaibhav/duke/Fall Term/Data Science for Business/Final Project -- Fraud/fraudTest.csv")
 df <- data
 clean_df <- na.omit(df) #Drop NAs 
 
@@ -122,9 +122,6 @@ mean_accuracy <- mean(cv_results$Accuracy)
 mean_kappa <- mean(cv_results$Kappa)
 cat("Mean Accuracy: ", round(mean_accuracy, 4), "\n")
 cat("Mean Kappa: ", round(mean_kappa, 4), "\n")
-
-
-
 
 
 #Confusion Matrix 
